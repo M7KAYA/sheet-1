@@ -523,15 +523,10 @@
 
         if (!isTrueFalseQuestion(questionObj)) {
           const fixedOptions = [
-            "All of the above",
-            "All are true",
-            "All are false",
-            "All are correct",
-            "All of the answers are correct",
-            "All answers are correct",
             "All answers are true",
-            "None of the above",
-            "none of them",
+            "All answers are false",
+            "All answers are correct",
+            "All answers are wrong",
           ];
           const fixedOptionIndex = optionsWithFlag.findIndex((option) =>
             fixedOptions.includes(option.text.trim())
